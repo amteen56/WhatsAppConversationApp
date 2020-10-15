@@ -11,6 +11,7 @@ namespace WhatsAppConversationApp.Controllers
         // GET: Account
         public ActionResult Index()
         {
+
             return View();
         }
 
