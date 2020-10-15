@@ -127,6 +127,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="DataModel\UserAuthenticationModel.cs" />
+    <Compile Include="DataModel\UserDataModel.cs" />
     <Compile Include="DB\Db.cs" />
     <Compile Include="DB\DBConnection.cs" />
     <Compile Include="DB\DBConnectionPool.cs" />
@@ -137,6 +138,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Model\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
