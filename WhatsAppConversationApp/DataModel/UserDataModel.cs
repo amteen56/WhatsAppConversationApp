@@ -40,7 +40,7 @@ namespace WhatsAppConversationApp.DataModel
             }
         }
 
-        public int Crete_Usre(User model)
+        public int Crete_User(User model)
         {
             List<SqlParameter> procedureParameters = new List<SqlParameter>(){
                 new SqlParameter("@name", SqlDbType.VarChar){ Value = model.name},
