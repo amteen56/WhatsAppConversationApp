@@ -57,7 +57,6 @@ namespace WhatsAppConversationApp.DataModel
                 {
                     return r.dr.GetInt32(0);
                 }
-
                 return -1;
             }
             catch (Exception ex)
