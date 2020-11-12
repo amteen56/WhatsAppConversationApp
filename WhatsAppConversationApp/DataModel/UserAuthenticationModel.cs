@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 
+
 namespace WhatsAppConversationApp.DataModel
 {
     public class UserAuthenticationModel
@@ -28,16 +29,14 @@ namespace WhatsAppConversationApp.DataModel
                 var a = new Db().getConnection();
 
                 DBResultSet r = new Db().getConnection().ExecuteReaderParameterized("proc_user_authentication_login", System.Data.CommandType.StoredProcedure, procedureParameters);
-                DbDataReader _r = r.dr;
+                DbDataReader _r =  r.dr;
+     
                 if (_r.Read())
-                    return (int)Db.getNamedValue(_r, "user_authenication_id");
-
-
+                { return (int)Db.getNamedValue(_r, "user_authenication_id"); }
                 else
                 {
                     return -1;
                 }
-
             }
             catch (Exception ex)
             {
@@ -46,6 +45,4 @@ namespace WhatsAppConversationApp.DataModel
             return -1;
         }
     }
-
-
 }

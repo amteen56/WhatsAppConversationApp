@@ -40,7 +40,7 @@ namespace WhatsAppConversationApp.DataModel
             }
         }
 
-        public int Crete_User(User model)
+        public int CreteUser(User model)
         {
             List<SqlParameter> procedureParameters = new List<SqlParameter>(){
                 new SqlParameter("@name", SqlDbType.VarChar){ Value = model.name},
@@ -66,7 +66,7 @@ namespace WhatsAppConversationApp.DataModel
             }
         }
 
-        public int Delete_User(int id)
+        public int DeleteUser(int id)
         {
             List<SqlParameter> procedureParameters = new List<SqlParameter>(){
                 new SqlParameter("@id", SqlDbType.Int){ Value = id}
@@ -87,7 +87,7 @@ namespace WhatsAppConversationApp.DataModel
             {
                 error = ex.Message;
                 return -1;
-            }
+            } 
         }
     }
 }

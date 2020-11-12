@@ -40,7 +40,7 @@ namespace WhatsAppConversationApp.DataModel
             }
         }
 
-        public int Delete_User_Chat(int userid, int wa_chat_id)
+        public int DeleteUserChat(int userid, int wa_chat_id)
         {
             List<SqlParameter> procedureParameters = new List<SqlParameter>(){
                 new SqlParameter("@userid", SqlDbType.Int){ Value = userid},
@@ -57,8 +57,9 @@ namespace WhatsAppConversationApp.DataModel
             {
                 error = ex.Message;
                 return -1;
+
             }
         }
-
+      
     }
 }

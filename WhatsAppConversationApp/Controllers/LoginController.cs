@@ -6,7 +6,6 @@ using System.Web.Mvc;
 using WhatsAppConversationApp.DataModel;
 using WhatsAppConversationApp.Model;
 
-
 namespace WhatsAppConversationApp.Controllers
 {
     public class LoginController : Controller
